@@ -89,7 +89,7 @@ const App = () => {
     </div>
     <footer className="text-center">
       <p>&copy; 2017</p>
-      <p>Esther Falayi | <a href="">github.com</a></p>
+      <p>Esther Falayi | <a href="https://github.com/andela-efalayi/wbf-starter-config">github.com</a></p>
     </footer>
    </div>
   );
