@@ -1,0 +1,8 @@
+$font-family-sans-serif: 'Source Sans Pro', sans-serif !default;
+$font-family-serif:      'Source Serif Pro', serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+ul li:first-child{
+  color: black;
+}

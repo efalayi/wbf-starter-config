@@ -1,0 +1,19 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+.home {
+  padding-left: 0em;
+  padding-right: 0em;
+
+  hr {
+    width: 15em;
+  }
+}
+.icons li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1em;
+  .icons li::last-child{
+    margin-right: 0em;
+  }
+}
