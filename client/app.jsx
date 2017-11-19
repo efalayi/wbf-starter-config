@@ -3,19 +3,23 @@ import ReactDOM from 'react-dom';
 import 'bootstrap';
 import './main.scss';
 
+/**
+* App.jsx: main entry file
+* @since: v.1.0.0
+*/
 const App = () => {
   return(
-   <div className="container-fluid home">
-     <div className="jumbotron jumbotron-fluid">
+    <div className="home container-fluid">
+     <header className="section jumbotron jumbotron-fluid">
       <div className="container-fluid">
-        <h1 className="text-center">Setting Up Webpack for Bootstrap 4 and FontAwesome</h1>
+          <h1>Setting Up <strong><a href="https://webpack.js.org/">Webpack</a></strong> for <strong><a href="https://getbootstrap.com/">Bootstrap 4</a></strong> and <strong><a href="http://fontawesome.io/">FontAwesome</a></strong></h1>
         <hr />
         <p className="lead text-center">This is a simple starter pack for setting up your webpack for Bootstrap and Font Awesome</p>
       </div>
-    </div>
-    <div className="container">
+    </header>
+    <div className="dependencies section container-fluid">
       <div className="row">
-        <div className="col-4">
+        <div className="col-4 dev-dependencies">
           <h4>Dev Dependencies</h4>
           <ul>
             <li>express</li>
@@ -33,7 +37,7 @@ const App = () => {
             <li>transfer-webpack-plugin</li>
           </ul>
         </div>
-        <div className="col-4">
+        <div className="col-4 bootstrap-dependencies">
           <h4>Bootstrap Dependencies</h4>
           <ul>
             <li>bootstrap</li>
@@ -69,7 +73,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-4 font-awesome-dependencies">
           <h4>Font Awesome Dependencies</h4>
           <ul>
             <li>font-awesome-loader</li>
@@ -82,14 +86,27 @@ const App = () => {
             <li><i className="fa fa-car" aria-hidden="true"></i></li>
             <li><i className="fa fa-binoculars" aria-hidden="true"></i></li>
             <li><i className="fa fa-database" aria-hidden="true"></i></li>
-            <li><i className="fa fa-paper-plane" aria-hidden="true"></i></li>                              
+            <li><i className="fa fa-paper-plane" aria-hidden="true"></i></li>
           </ul>
+          <br />
+          <div className="dropdown">
+            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More Icons
+            </button>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a className="dropdown-item" href="#">Action</a>
+              <a className="dropdown-item" href="#">Another action</a>
+              <a className="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <footer className="text-center">
-      <p>&copy; 2017</p>
-      <p>Esther Falayi | <a href="https://github.com/andela-efalayi/wbf-starter-config">github.com</a></p>
+    <ul>
+      <li>&copy; 2017</li>
+      <li>Esther Falayi | <a href="https://github.com/andela-efalayi/wbf-starter-config">github.com</a></li>
+    </ul>
     </footer>
    </div>
   );

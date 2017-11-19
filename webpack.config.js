@@ -14,12 +14,16 @@ module.exports = {
     'font-awesome/scss/font-awesome.scss',
     './client/app.jsx'
   ],
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js'
+  },
   devServer: {
     contentBase: 'client/', // Relative directory for base of server
-    hot: true, // Live-reload
+    publicPath: '/',
     inline: true,
     port: process.env.PORT || 3000, // Port Number
-    host: 'localhost', // Change to '0.0.0.0' for external facing server
+    host: '127.0.0.1', // Change to '0.0.0.0' for external facing server
     historyApiFallback: true,
   },
   plugins: [
@@ -50,10 +54,6 @@ module.exports = {
       { from: 'client' },
     ])
   ],
-  output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
-  },
   module: {
     rules: [
       {

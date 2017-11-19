@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "dev": "webpack && webpack-dev-server --config webpack.config.js --progress --inline --colors"
+    "dev": "webpack-dev-server --watch"
   },
   "author": "Esther Falayi",
   "license": "ISC",

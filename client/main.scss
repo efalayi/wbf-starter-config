@@ -1,19 +1,82 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
-.home {
-  padding-left: 0em;
-  padding-right: 0em;
+$webpack-color: rgb(145, 214, 249);
+$fontawesome-color: rgb(39, 157, 117);
+$bootstrap-color: rgb(86, 63, 122);
+$background-color: rgb(44, 59, 66);
 
+.home {
+  padding: 20px 20px 0px 20px;
+  background-color: rgba($color: $webpack-color, $alpha: 0.1);
   hr {
     width: 15em;
   }
 }
-.icons li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 1em;
-  .icons li::last-child{
-    margin-right: 0em;
+
+.section {
+  border-radius: 10px;
+}
+
+header.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 40px);
+  background-color: $background-color;
+  color: #F5F5F5;
+  h1 {
+    a {
+      text-decoration: none;
+    }
+    strong:nth-child(1) {
+      a {
+        color: $webpack-color;
+      }
+    }
+    strong:nth-child(2) {
+      a {
+        color: $bootstrap-color;
+      }
+    }
+    strong:nth-child(3) {
+      a {
+        color: $fontawesome-color;
+      }
+    }
+  }
+}
+
+.dependencies {
+  padding-top: 30px;
+  background-color: rgba($color: $webpack-color, $alpha: 0.4);
+  margin-bottom: 10px;
+  .font-awesome-dependencies {
+    .icons li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1em;
+    }
+    .icons li::last-child{
+      margin-right: 0em;
+    }
+    .icons li:nth-child(odd) {
+      i {
+        color: #A1887F;
+      }
+    }
+    .icons li:nth-child(even) {
+      i {
+        color: #8D6E63;
+      }
+    }
+  }
+}
+
+footer {
+  ul {
+    list-style: none;
+     a {
+        color: $fontawesome-color;
+      }
   }
 }
