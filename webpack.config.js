@@ -19,7 +19,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: 'client/', // Relative directory for base of server
+    contentBase: 'build/', // Relative directory for base of server
     publicPath: '/',
     inline: true,
     port: process.env.PORT || 3000, // Port Number
@@ -49,7 +49,7 @@ module.exports = {
       Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
       Util: 'exports-loader?Util!bootstrap/js/dist/util'
     }),
-    new ExtractTextPlugin('../client/main.css'),
+    new ExtractTextPlugin('main.css'),
     new TransferWebpackPlugin([
       { from: 'client' },
     ])
