@@ -14,7 +14,7 @@ const App = () => {
       <div className="container-fluid">
           <h1>Setting Up <strong><a href="https://webpack.js.org/">Webpack</a></strong> for <strong><a href="https://getbootstrap.com/">Bootstrap 4</a></strong> and <strong><a href="http://fontawesome.io/">FontAwesome</a></strong></h1>
         <hr />
-        <p className="lead text-center">This is a simple starter pack for setting up your webpack for Bootstrap and Font Awesome</p>
+        <p className="lead">This is a simple starter pack for setting up your webpack for Bootstrap and Font Awesome</p>
       </div>
     </header>
     <div className="dependencies section container-fluid">

@@ -20,10 +20,18 @@ $background-color: rgb(44, 59, 66);
 
 header.jumbotron {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: calc(100vh - 40px);
   background-color: $background-color;
   color: #F5F5F5;
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   h1 {
     a {
       text-decoration: none;
