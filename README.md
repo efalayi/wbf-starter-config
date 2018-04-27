@@ -1,7 +1,7 @@
 ### Webpack-Bootstrap-FontAwesome Starter Configuration
 This a simple webpack config for Bootstrap 4 and FontAwesome npm packages.
 
-![Alt webpack](/images/wbf-home.png?raw=true "Screenshot")
+![Alt webpack](/images/wbf-update.png?raw=true "Screenshot")
 
 ***
 #### Getting Started

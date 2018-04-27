@@ -7,10 +7,10 @@ const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   devtool: 'eval',
   entry: [
     'webpack/hot/only-dev-server',
-    'tether',
     'font-awesome/scss/font-awesome.scss',
     './client/app.jsx'
   ],
@@ -32,11 +32,6 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      tether: 'tether',
-      Tether: 'tether',
-      'window.Tether': 'tether',
-      Popper: ['popper.js', 'default'],
-      'window.Tether': 'tether',
       Alert: 'exports-loader?Alert!bootstrap/js/dist/alert',
       Button: 'exports-loader?Button!bootstrap/js/dist/button',
       Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
